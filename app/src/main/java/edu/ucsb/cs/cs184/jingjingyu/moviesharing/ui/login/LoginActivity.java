@@ -64,6 +64,7 @@ public class LoginActivity extends AppCompatActivity {
         final ProgressBar loadingProgressBar = findViewById(R.id.loading);
 
 
+
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
             @Override
             public void onChanged(@Nullable LoginFormState loginFormState) {
@@ -71,6 +72,7 @@ public class LoginActivity extends AppCompatActivity {
                     return;
                 }
                 loginButton.setEnabled(loginFormState.isDataValid());
+                signupButton.setEnabled(loginFormState.isDataValid());
                 if (loginFormState.getUsernameError() != null) {
                     usernameEditText.setError(getString(loginFormState.getUsernameError()));
                 }
@@ -79,6 +81,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+
 
         /*
         loginViewModel.getLoginResult().observe(this, new Observer<LoginResult>() {
@@ -100,6 +103,7 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         });
+
          */
 
         TextWatcher afterTextChangedListener = new TextWatcher() {
@@ -172,9 +176,26 @@ public class LoginActivity extends AppCompatActivity {
                 //loadingProgressBar.setVisibility(View.VISIBLE);
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
-
                 //add info to auth firebase
-                mAuth.createUserWithEmailAndPassword(usernameEditText.getText().toString(),passwordEditText.getText().toString());
+                mAuth.createUserWithEmailAndPassword(usernameEditText.getText().toString(),passwordEditText.getText().toString())
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                //if create successful in database
+                                if(task.isSuccessful()){
+                                    Log.d("signup","success");
+                                    //FirebaseUser user=mAuth.getCurrentUser();
+                                    Toast.makeText(getApplicationContext(), "welcome", Toast.LENGTH_LONG).show();
+                                    //start the next activity
+                                    startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                                    //if database does not have information
+                                }else{
+                                    Log.w("login","failure");
+                                    Toast.makeText(LoginActivity.this,"Authentication Failed",Toast.LENGTH_LONG).show();
+
+                                }
+                            }
+                        });;
             }
         });
     }
