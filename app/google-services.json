@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "20938827927",
+    "firebase_url": "https://moviesharing-85b28.firebaseio.com",
+    "project_id": "moviesharing-85b28",
+    "storage_bucket": "moviesharing-85b28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20938827927:android:f869faec14248ebcc521d2",
+        "android_client_info": {
+          "package_name": "edu.ucsb.cs.cs184.jingjingyu.moviesharing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20938827927-lvaqun5oujmak5vvgck4r2sk8148mq52.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.ucsb.cs.cs184.jingjingyu.moviesharing",
+            "certificate_hash": "55ec84c580471798c71e9f00399a75c8c5076030"
+          }
+        },
+        {
+          "client_id": "20938827927-bunfvgjvq592gfous5fjctpru62lrbbt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf440NpoxqoPQitscA2MYwReG4LxIbaPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20938827927-bunfvgjvq592gfous5fjctpru62lrbbt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
