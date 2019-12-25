@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "545250754569",
+    "firebase_url": "https://cloudmovie-d3bbb.firebaseio.com",
+    "project_id": "cloudmovie-d3bbb",
+    "storage_bucket": "cloudmovie-d3bbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545250754569:android:4043bd1efe5abcc989f8d8",
+        "android_client_info": {
+          "package_name": "edu.ucsb.cs.cs184.csu.cloudmovie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545250754569-vl8a4ml6su2h9jc0ihsrqsurhd8gnf2h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.ucsb.cs.cs184.csu.cloudmovie",
+            "certificate_hash": "1d912822c77dce7e80185d6c24536ff519621d3c"
+          }
+        },
+        {
+          "client_id": "545250754569-fcho7u23e91m0veptah3aq23je5uml8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJS42DaNG-p1Q8D4bxYNwG35XEK0BuhlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545250754569-fcho7u23e91m0veptah3aq23je5uml8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545250754569:android:44928bad1be332d889f8d8",
+        "android_client_info": {
+          "package_name": "edu.ucsb.cs.cs184.jingjingyu.danmu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545250754569-shh5u8oa5vcbvqaj7pclvr08mt7h92m0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.ucsb.cs.cs184.jingjingyu.danmu",
+            "certificate_hash": "a0356bdbca80fb3dc88b6d1b06969f48bccca8d9"
+          }
+        },
+        {
+          "client_id": "545250754569-fcho7u23e91m0veptah3aq23je5uml8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJS42DaNG-p1Q8D4bxYNwG35XEK0BuhlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545250754569-fcho7u23e91m0veptah3aq23je5uml8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545250754569:android:a05605ce47bcb63489f8d8",
+        "android_client_info": {
+          "package_name": "edu.ucsb.cs.cs184.wetube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545250754569-350kiiu4142vcqtsra41vu6ue1vhou9g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.ucsb.cs.cs184.wetube",
+            "certificate_hash": "a0356bdbca80fb3dc88b6d1b06969f48bccca8d9"
+          }
+        },
+        {
+          "client_id": "545250754569-fcho7u23e91m0veptah3aq23je5uml8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJS42DaNG-p1Q8D4bxYNwG35XEK0BuhlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545250754569-fcho7u23e91m0veptah3aq23je5uml8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

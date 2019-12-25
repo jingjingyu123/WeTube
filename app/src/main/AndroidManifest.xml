@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.ucsb.cs.cs184.wetube">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launche"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launche_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewerRoomActivity" />
+        <activity
+            android:name=".RoomActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".CreateRoomActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".SearchRoomActivity"></activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="Search Youtube"></activity>
+        <activity android:name=".PlayerActivity" />
+    </application>
+
+</manifest>

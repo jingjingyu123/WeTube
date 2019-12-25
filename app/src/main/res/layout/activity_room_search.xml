@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This layout defines how the activity should look when the app is opened as this is the layout which is loaded at first -->
+<!-- LinearLayout stacks the views one after the other which in this case is vertical orientation -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="#10FFFFFF"
+    android:backgroundTintMode="src_over"
+    android:background="@drawable/search_bk">
+
+    <!-- A input text type view to enter the search keyword(s)
+    and setting the keyboard action to actionSearch so that it shows a search icon
+    for clicking after a text has been entered -->
+    <!--    <EditText-->
+    <!--        android:id="@+id/search_input"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="@string/search"-->
+    <!--        android:imeOptions="actionSearch"-->
+    <!--        android:inputType="text"-->
+    <!--        android:maxLines="1" />-->
+    <EditText
+        android:id="@+id/search_room_name"
+        android:layout_width="341dp"
+        android:layout_height="36dip"
+        android:layout_margin="36dip"
+        android:background="@drawable/bg_edittext_selector"
+        android:hint="Put in the name of the room you want!"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip" />
+
+    <EditText
+        android:id="@+id/search_room_pw"
+        android:layout_width="341dp"
+        android:layout_height="36dip"
+        android:layout_margin="36dip"
+        android:background="@drawable/bg_edittext_selector"
+        android:hint="If the room is private, put in password too!"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip"
+        android:ems="10"
+        android:inputType="textPassword"/>
+    <!-- RecyclerView will show the result in a ordered manner
+    by infalting the video_item.xml which has the CardView set to show
+    Thumbnail, Video title, id and short description -->
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:foreground="@drawable/baseline_search_black_48dp"
+        android:foregroundGravity="center"
+        android:background="@drawable/button_normal"/>
+
+</LinearLayout>
